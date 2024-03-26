@@ -3,23 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link al css -->
+    <link rel="stylesheet" href="./css/style.css">
     <title>Calcola il prezzo del tuo biglietto</title>
 </head>
 <body>
+    <!-- titolo -->
     <header>
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
     </header>
+
+    <!-- main -->
     <main>
+        <!-- contenitore del form -->
         <div class="container-info">
             <div class="dati flex">
                 <div class="col">
-                    <p>Nome e Cognome</p>
+                    <label for="nome">Nome e Cognome</label>
+                    <input type="text" id="nome">
                 </div>
                 <div class="col">
-                    <p>Km da percorrere</p>
+                    <label for="km">Km da percorrere</label>
+                    <input type="number" id="km">
                 </div>
                 <div class="col">
-                    <p>Fascia di età</p>
+
+                    <label for="eta">Fascia d'età</label>
+                    <select id="eta" name="eta">
+                      <option value="maggiorenne">Maggiorenne under 65 anni</option>
+                      <option value="minorenne">Minorenne over 13 anni</option>
+                      <option value="anziano">Anziano over 65 anni</option>
+                      <option value="bambino">Bambino under 13 anni</option>
+                    </select>
+
+
+
                 </div>
             </div>
             <div class="buttons flex">
@@ -27,6 +45,7 @@
                 <button>ANNULLA</button>
             </div>
         </div>
+        <!-- contenitore dei risultati del form calcolati -->
         <div class="container-results">
             <h2>DETTAGLI PASSEGGERO</h2>
             <div class="results flex">
