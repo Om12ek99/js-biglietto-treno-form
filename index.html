@@ -18,16 +18,18 @@
         <!-- contenitore del form -->
         <div class="container-info">
             <div class="dati flex">
+                <!-- prima colonna con i dati dell'utente -->
                 <div class="col">
                     <label for="nome">Nome e Cognome</label>
                     <input type="text" id="nome">
                 </div>
+                <!-- seconda colonna con il kilometraggio percorso -->
                 <div class="col">
                     <label for="km">Km da percorrere</label>
                     <input type="number" id="km">
                 </div>
+                <!-- terza colonna con la fascia di età -->
                 <div class="col">
-
                     <label for="eta">Fascia d'età</label>
                     <select id="eta" name="eta">
                       <option value="maggiorenne">Maggiorenne under 65 anni</option>
@@ -35,37 +37,23 @@
                       <option value="anziano">Anziano over 65 anni</option>
                       <option value="bambino">Bambino under 13 anni</option>
                     </select>
-
-
-
                 </div>
             </div>
+            <!-- fine del contenitore dei dati -->
+            <!-- pulsanti azione -->
             <div class="buttons flex">
-                <button>GENERA</button>
-                <button>ANNULLA</button>
+                <button id="gen">GENERA</button>
+                <button id="del">ANNULLA</button>
             </div>
         </div>
+        <!-- fine contenitore del form -->
         <!-- contenitore dei risultati del form calcolati -->
-        <div class="container-results">
-            <h2>DETTAGLI PASSEGGERO</h2>
-            <div class="results flex">
-                <div class="card">
-                    <p>NOME PASSEGGERO</p>
-                </div>
-                <div class="card">
-                    <p>Offerta</p>
-                </div>
-                <div class="card">
-                    <p>CArrozza</p>
-                </div>
-                <div class="card">
-                    <p>Codice Cp</p>
-                </div>
-                <div class="card">
-                    <p>Costo Biglietto</p>
-                </div>
-            </div>
+        <div id="result">
+            <p>ciao</p>
         </div>
     </main>
+
+    <!-- collegamento javascript -->
+    <script src="./script.js"></script>
 </body>
 </html>
